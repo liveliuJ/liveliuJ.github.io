@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assist</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+  </head>
+  <body>
+    <div class="header">
+      <img class="header-img"src="./img/Logo.png" alt="" />
+      <div class="header-nav">
+        <a href="#benefit">Benefit</a>
+        <a href="#assistant">Cari ART</a>
+        <a href="#order">Alur Pesanan</a>
+        <a href="#testimoni">Testimoni</a>
+      </div>
+      <div class="header-btn">
+        <button class="button">Masuk</button>
+        <button class="button secondary">Daftar</button>
+      </div>
+    </div>
+    <div class="hero" data-anijs="if: DOMContentLoaded,on: document, do: bounceInLeft animated">
+      <img class="hero-img" src="./img/img-art_hiro1.png" alt="">
+      <div class="hero-content">
+        <h1>Cara Aman dan Praktis Cari Asisten Rumah Tangga</h1>
+        <p>ART terlatih kami siap melayani keluarga anda dengan biaya administrasi rendah!</p>
+        <button class="button">Pesan Sekarang</button>
+      </div>
+      <img class="hero-img-card" src="./img/img-cards.png" alt="" data-anijs="if: DOMContentLoaded, on: document, do: smoothShake smoothAnimated infinite">
+      <img class="hero-gelombang" src="./img/Gelombang.svg">
+    </div>
+    <div class="benefit" id="benefit">
+      <h2 class="benefit-title" data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal">Kemudahan yang Kami Berikan</h2>
+      <div class="benefit-card-container">
+        <div class="benefit-cards" data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: $scrollReveal repeat">
+          <p>ART yang Terlatih dan Berpengalaman</p>
+          <img src="./img/card-img1.svg" data-anijs="if: mouseover, do: pulse animated">
+        </div>
+        <div class="benefit-cards" data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: $scrollReveal repeat">
+          <p>Layanan Bergaransi</p>
+          <img src="./img/card-img2.svg" data-anijs="if: mouseover, do: pulse animated">
+        </div>
+        <div class="benefit-cards" data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: $scrollReveal repeat">
+          <p>Biaya administrasi yang rendah</p>
+          <img src="./img/card-img3.svg" data-anijs="if: mouseover, do: pulse animated">
+        </div>
+      </div>
+    </div>
+    <div class="find-assistant" id="assistant">
+      <h2>Cari ART Sesuai Keinginan Kamu!</h2>
+      <div class="find-assistant-cards" id="find-assistant-cards">
+        <!-- <div class="assistant-card">
+          <div class="assistant-card-content">
+            <div class="assistant-card-img">
+              <img src="./img/artcardavatar1.svg" alt="">
+            </div>
+            <div class="assistant-card-person">
+              <p class="assistant-card-name">Sumiyati</p>
+              <div class="assistant-card-stats">
+                <p class="assistant-card-salary">Rp. 1.950.000</p>
+                <p class="assistant-card-exp">1 Tahun Exp.</p>
+              </div>
+            </div>
+            <div class="assistant-card-action">
+              <button class="assistant-card-action-message">Pesan</button>
+              <button class="assistant-card-action-fav"><img src="./img/fav.svg" alt=""></button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <button class="find-assistant-more">Lihat lainnya</button>
+    </div>
+    <div class="order-flows" id="order">
+      <h2>Alur Pemesanan Kami</h2>
+      <div class="flows">
+        <div class="flow" data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: $scrollReveal repeat">
+          <div class="flow-img"><img src="./img/flows/flow1.svg" alt="" data-anijs="if: mouseover, do: pulse animated"></div>
+          <div class="flow-description">
+            <div class="flow-circle">1</div>
+            <p>Alur Pemesanan Kami</p>
+          </div>
+        </div>
+        <div class="flow" data-anijs="if: scroll, on: window, do: fadeInDown animated, before: $scrollReveal repeat">
+          <div class="flow-img"><img src="./img/flows/flow2.svg" alt="" data-anijs="if: mouseover, do: pulse animated"></div>
+          <div class="flow-description">
+            <div class="flow-circle">2</div>
+            <p>Melakukan pembayaran interview</p>
+          </div>
+        </div>
+        <div class="flow" data-anijs="if: scroll, on: window, do: fadeInRight animated, before: $scrollReveal repeat">
+          <div class="flow-img"><img src="./img/flows/flow3.svg" alt="" data-anijs="if: mouseover, do: pulse animated"></div>
+          <div class="flow-description">
+            <div class="flow-circle">3</div>
+            <p>Menunggu pihak Assist menghubungi</p>
+          </div>
+        </div>
+        <div class="flow" data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: $scrollReveal repeat">
+          <div class="flow-img"><img src="./img/flows/flow4.svg" alt="" data-anijs="if: mouseover, do: pulse animated"></div>
+          <div class="flow-description">
+            <div class="flow-circle">4</div>
+            <p>Melakukan Interview dengan ART</p>
+          </div>
+        </div>
+        <div class="flow" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal repeat">
+          <div class="flow-img"><img src="./img/flows/flow5.svg" alt="" data-anijs="if: mouseover, do: pulse animated"></div>
+          <div class="flow-description">
+            <div class="flow-circle">5</div>
+            <p>Pesanan ART Diterima & Lakukan Pembayaran</p>
+          </div>
+        </div>
+        <div class="flow" data-anijs="if: scroll, on: window, do: fadeInRight animated, before: $scrollReveal repeat">
+          <div class="flow-img"><img src="./img/flows/flow6.svg" alt="" data-anijs="if: mouseover, do: pulse animated"></div>
+          <div class="flow-description">
+            <div class="flow-circle">6</div>
+            <p>Selesai!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimoni" id="testimoni">
+      <h2>Apa Kata Mereka?</h2>
+      <div class="testimoni-users">
+        <div class="testimoni-user" data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: $scrollReveal repeat"><img src="./img/testimoni/testi1.svg" alt=""></div>
+        <div class="testimoni-user" data-anijs="if: scroll, on: window, do: fadeInDown animated, before: $scrollReveal repeat"><img src="./img/testimoni/testi2.svg" alt=""></div>
+        <div class="testimoni-user" data-anijs="if: scroll, on: window, do: fadeInRight animated, before: $scrollReveal repeat"><img src="./img/testimoni/testi3.svg" alt=""></div>
+        <div class="testimoni-user" data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: $scrollReveal repeat"><img src="./img/testimoni/testi4.svg" alt=""></div>
+        <div class="testimoni-user" data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal repeat"><img src="./img/testimoni/testi5.svg" alt=""></div>
+        <div class="testimoni-user" data-anijs="if: scroll, on: window, do: fadeInRight animated, before: $scrollReveal repeat"><img src="./img/testimoni/testi6.svg" alt=""></div>
+      </div>
+    </div>
+    <div class="contact-us" id="contact">
+      <img class="contact-us-model" src="./img/wa-models.svg" alt="">
+      <div class="contact-us-content">
+        <h2>Konsultasi terlebih dahulu!</h2>
+        <a href="https://api.whatsapp.com/send?phone=+6281585079736&text=Test">
+          <div class="contact-us-whatsapp"><img src="./img/wa-img.svg" alt="" width="30"> WhatsApp</div>
+        </a>
+        <p>Lakukan Konsultasi dengan admin kami untuk bertanya lebih lanjut mengenai layanan kami!</p>
+      </div>
+    </div>
+    <footer>
+      <div class="about-us">
+        <h2>Tentang Kami</h2>
+        <p>Platform yang menyediakan layanan jasa pencari Asisten Rumah Tangga (ART) yang terlatih, bergaransi, dan biaya administrasi yang lebih rendah</p>
+        <div>
+          <a href="">
+            <img src="./img/IG.svg" alt="">
+          </a>
+          <a href="">
+            <img src="./img/FB.svg" alt="">
+          </a>
+          <a href="">
+            <img src="./img/TWT.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <a href="">Tentang Kami</a>
+        <a href="">Cara Pemesanan</a>
+        <a href="">Syarat dan Ketentuan</a>
+        <a href="">Kebijakan Privasi</a>
+        <a href="">Laporan Kendala</a>
+        <a href="">Karir</a>
+      </div>
+      <div class="footer-contacts">
+        <h3>Hubungi Kami!</h3>
+        <div>
+          <div class="footer-contact">
+            <img src="./img/footer-contact3.svg" alt="">
+            <p>cs@assist.id</p>
+          </div>
+          <div class="footer-contact">
+            <img src="./img/footer-contact2.svg" alt="">
+            <p>+62813-4567-9820</p>
+          </div>
+          <div class="footer-contact">
+            <img src="./img/footer-contact1.svg" alt="">
+            <p>
+              Setiap Hari<br>
+              09.00 - 21.00 WIB
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script>
+      const dummydata = true;
+      const cardParent = document.getElementById("find-assistant-cards");
+
+      const datas = [
+        {
+          name: "Sumiyati",
+          salary: "1.950.000",
+          exp: "1",
+          img: "./img/artcardavatar1.svg"
+        },
+        {
+          name: "Marsinah",
+          salary: "2.000.000",
+          exp: "3",
+          img: "./img/artcardavatar2.svg"
+        },
+        {
+          name: "Tuti",
+          salary: "Rp1.500.000",
+          exp: "1",
+          img: "./img/artcardavatar3.svg"
+        },
+        {
+          name: "Inayati",
+          salary: "1.900.000",
+          exp: "2",
+          img: "./img/artcardavatar4.svg"
+        },
+        {
+          name: "Suryani",
+          salary: "1.950.000",
+          exp: "1",
+          img: "./img/artcardavatar5.svg"
+        },
+        {
+          name: "Fitriyani",
+          salary: "1.250.000",
+          exp: "1",
+          img: "./img/artcardavatar6.svg"
+        },
+        {
+          name: "Yeti Kusuma",
+          salary: "1.750.000",
+          exp: "1",
+          img: "./img/artcardavatar7.svg"
+        },
+        {
+          name: "Elly Sutrisna",
+          salary: "2.100.000",
+          exp: "1",
+          img: "./img/artcardavatar8.svg"
+        },
+        {
+          name: "Dina Suminah",
+          salary: "1.300.000",
+          exp: "1",
+          img: "./img/artcardavatar9.svg"
+        },
+        {
+          name: "Marsinah",
+          salary: "2.000.000",
+          exp: "1",
+          img: "./img/artcardavatar10.svg"
+        },
+      ]
+
+      if(dummydata) {
+        datas.forEach(person => {
+          const assistantCard = document.createElement("div");
+          assistantCard.setAttribute("data-anijs", "if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal repeat; if: mouseover, do: pulse animated");
+          assistantCard.classList.add("assistant-card");
+          const assistantCardContent = document.createElement("div");
+          assistantCardContent.classList.add("assistant-card-content");
+          const assistantCardPerson = document.createElement("div");
+          assistantCardPerson.classList.add("assistant-card-person");
+          const assistantCardName = document.createElement("p");
+          assistantCardName.classList.add("assistant-card-name");
+          const assistantCardImgContainer = document.createElement("div");
+          assistantCardImgContainer.classList.add("assistant-card-img");
+          const assistantCardImg = document.createElement("img");
+          const assistantCardStats = document.createElement("div");
+          assistantCardStats.classList.add("assistant-card-stats");
+          const assistantCardSalary = document.createElement("p");
+          assistantCardSalary.classList.add("assistant-card-salary");
+          const assistantCardExp = document.createElement("p");
+          assistantCardExp.classList.add("assistant-card-exp");
+          const assistantCardAction = document.createElement("div");
+          assistantCardAction.classList.add("assistant-card-action");
+          const assistantCardActionMessage = document.createElement("button");
+          assistantCardActionMessage.classList.add("assistant-card-action-message");
+          const assistantCardActionFav = document.createElement("button");
+          assistantCardActionFav.classList.add("assistant-card-action-fav");
+          const favImg = document.createElement("img");
+          const assistantCardDetails = document.createElement("button");
+          assistantCardDetails.classList.add("assistant-card-details")
+          favImg.src = "./img/fav.svg";
+          assistantCardDetails.textContent = "See More >"
+          assistantCardActionMessage.textContent = "Pesan";
+          
+          assistantCardName.textContent = `${person.name}`;
+          assistantCardSalary.textContent = `Rp. ${person.salary}`;
+          assistantCardExp.textContent = `${person.exp} Tahun exp.`;
+          assistantCardImg.src = `${person.img}`;
+
+          assistantCardStats.appendChild(assistantCardSalary);
+          assistantCardStats.appendChild(assistantCardExp);
+          assistantCardPerson.appendChild(assistantCardName);
+          assistantCardPerson.appendChild(assistantCardStats);
+          assistantCardImgContainer.appendChild(assistantCardImg);
+          assistantCardActionFav.appendChild(favImg);
+          assistantCardAction.appendChild(assistantCardActionMessage);
+          assistantCardAction.appendChild(assistantCardActionFav);
+          assistantCardContent.appendChild(assistantCardImgContainer);
+          assistantCardContent.appendChild(assistantCardPerson);
+          assistantCardContent.appendChild(assistantCardAction);
+          assistantCard.appendChild(assistantCardContent);
+          assistantCard.appendChild(assistantCardDetails);
+
+          cardParent.appendChild(assistantCard);
+        })
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/anijs/anijs@0.9.3/dist/anijs-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/anijs/anijs@0.9.3/dist/helpers/scrollreveal/anijs-helper-scrollreveal.js"></script>
+  </body>
+</html>
